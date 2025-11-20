@@ -1,16 +1,14 @@
-## Hi there 👋
+Hi, I’m **Amir Firouzmanesh** — a senior software engineer (PhD) and founder of **AandZ.tech**, an independent AI & cloud engineering practice based in the UAE. I’ve shipped production systems at **Microsoft**, **Amazon Web Services**, **Property Finder**, and DataGardens: from AI-powered photo editing in Windows Photos, to RDS SQL Server features and marketplace analytics at AWS, to subscription/credit platforms behind real-estate listings.
 
-<!--
-**amirhf/amirhf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+These days I focus on **AI integration** (LLMs, RAG, agents, image models) and **event-driven architectures** (CQRS, outbox, idempotent consumers, Kafka/Redpanda, RabbitMQ). A lot of my thinking lives in open-source reference projects — like **Credit Ledger**, **AI Image Search / Feature Router**, and **Learning Path Designer** — which I use as blueprints for client work, interviews, and teaching.
 
-Here are some ideas to get you started:
+#### What I’m working on
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 💡 **Reference systems** for credits/ledgers, AI image search, and RAG/agentic apps  
+- 🧠 **Practical AI integration**: routing between local models and cloud LLMs, evaluation, and guardrails  
+- 🧱 **Event-driven platforms**: CQRS, transactional outbox, replayable projections, and strong invariants  
+- 🧭 **Architecture & mentoring**: helping teams clarify designs, ship reliably, and level up their engineering practice
+
+#### Tools I like
+
+`Go` · `Python` · `TypeScript/React/Next.js` · `FastAPI` · `Postgres` · `Kafka/Redpanda` · `RabbitMQ` · `Qdrant/pgvector` · `AWS` · `Docker` · `Kubernetes`
