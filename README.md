@@ -60,16 +60,16 @@ Use it as a blueprint for: **wallets, balances, credits/usage, and subscription 
 
 ---
 
-### 🖼️ AI Image Search / Feature Router — Multimodal search engine  
-**Repo:** `github.com/amirhf/imageSearch`  
+### 🖼️ AI Image Search / Feature Router — Multimodal search engine
+**Repo:** `github.com/amirhf/imageSearch`
 
-Local-first **captioning & embeddings** with **cloud fallback** governed by cost/latency policy. Provides:
+Local-first **captioning & embeddings** with a **scalable Go microservice** for high-throughput hybrid search. Provides:
 
-- FastAPI APIs for `/images`, `/search`, `/metrics`.
-- Pluggable vector backends (**pgvector** or **Qdrant**) with benchmarks and observability hooks.
-- A pattern for routing between local models and hosted LLMs/image models.
+- **Polyglot Architecture**: Python (FastAPI) for AI/Write paths + Go for high-performance Read paths.
+- **Hybrid Search**: Combines **Dense Retrieval** (OpenCLIP) and **Sparse Retrieval** (FTS) using `pgvector` and `pgx`.
+- **Production Engineering**: Features **Shadow Mode** for safe backend migration, **Load Testing** (Locust), and **Policy Routing** (Local vs Cloud).
 
-Use it as a reference for **e-commerce discovery**, internal media search, or any “find similar content” feature.
+Use it as a reference for **scalable e-commerce discovery**, internal media search, or any “find similar content” feature requiring high concurrency.
 
 ---
 
