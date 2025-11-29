@@ -60,16 +60,17 @@ Use it as a blueprint for: **wallets, balances, credits/usage, and subscription 
 
 ---
 
-### 🖼️ AI Image Search / Feature Router — Multimodal search engine
+### 🛍️ Retail AI: Polyglot Search & Feature Router
 **Repo:** `github.com/amirhf/imageSearch`
 
-Local-first **captioning & embeddings** with a **scalable Go microservice** for high-throughput hybrid search. Provides:
+A high-concurrency **Retail Discovery Engine** combining **Go** for search orchestration and **Python** for ML inference.
 
-- **Polyglot Architecture**: Python (FastAPI) for AI/Write paths + Go for high-performance Read paths.
-- **Hybrid Search**: Combines **Dense Retrieval** (OpenCLIP) and **Sparse Retrieval** (FTS) using `pgvector` and `pgx`.
-- **Production Engineering**: Features **Shadow Mode** for safe backend migration, **Load Testing** (Locust), and **Policy Routing** (Local vs Cloud).
+- **Polyglot Architecture**: Uses **Go** on the hot path (search/fusion) for sub-100ms latency and **Python** for the rich ML ecosystem (CLIP/BLIP).
+- **Hybrid Search**: Merges **Dense Vectors** (Qdrant) and **Sparse Keywords** via Reciprocal Rank Fusion (RRF) to solve the "zero results" problem in e-commerce.
+- **AI Feature Router**: A "circuit breaker for intelligence" that cuts cloud costs by ~90% by dynamically routing requests to local quantized models before falling back to cloud APIs.
+- **SaaS Scalability**: Features built-in **multi-tenancy**, **Shadow Mode** for safe migration validation, and full OpenTelemetry instrumentation.
 
-Use it as a reference for **scalable e-commerce discovery**, internal media search, or any “find similar content” feature requiring high concurrency.
+Use it as a reference for: **e-commerce discovery**, hybrid search implementation, and **migrating Python prototypes to Go** systems.
 
 ---
 
