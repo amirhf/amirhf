@@ -48,15 +48,16 @@ If you’re a CTO, founder, or lead engineer wrestling with any of these, my rep
 
 ## Reference architectures (open source)
 
-### 🧮 Credit Ledger — Fintech core / double-entry system  
-**Repo:** `github.com/amirhf/creditLedger`  
-Event-driven, double-entry ledger for subscription and credit platforms. Includes:
+### 🧮 Fintech Core: Credit Ledger (Go + Kafka + Postgres)
+**Repo:** `github.com/amirhf/creditLedger` • **Story:** [From Spreadsheet Chaos to Reliable Credits](https://medium.com/@amirhosseinfirouzmanesh/from-spreadsheet-chaos-to-reliable-credits-ca8fe19fbdb7)
 
-- CQRS-style write/read separation with replayable projections.
-- Transactional outbox and idempotent consumers for safe, at-least-once processing.
-- Distributed tracing and metrics via Jaeger/Grafana for “what happened to this credit?” journeys.
+A production-ready **reference architecture** for handling high-volume financial credits and balances. It replaces fragile "credits column" designs with an immutable, double-entry ledger that guarantees auditability.
 
-Use it as a blueprint for: **wallets, balances, credits/usage, and subscription billing systems.**
+* **Event-Driven Integrity:** Implements the **Transactional Outbox** pattern and idempotent consumers to ensure consistency across microservices without dual-write hazards.
+* **CQRS & Scalability:** Decouples write logic from read patterns using **CQRS projections**, allowing for high-throughput ingestion and replayable read models.
+* **Full Observability:** Pre-wired with **Jaeger and Grafana** to trace "what happened to my credit?" journeys and monitor consumer lag/latency.
+
+**Use it as a blueprint for:** SaaS credits, marketplace wallets, usage-based billing, and loyalty point systems.
 
 ---
 
