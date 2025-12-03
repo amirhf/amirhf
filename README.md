@@ -75,16 +75,18 @@ Use it as a reference for: **e-commerce discovery**, hybrid search implementatio
 
 ---
 
-### 📚 Learning Path Designer — RAG + agent orchestration  
-**Repo:** `github.com/amirhf/learningPathDesigner`  
 
-RAG + agents demo that assembles grounded learning paths and quizzes:
+### 🧠 Agentic Workflow Orchestrator: Learning Path Designer
+**Repo:** `github.com/amirhf/learningPathDesigner`
 
-- Next.js frontend with a Go gateway and Python/FastAPI services.
-- Qdrant for vectors, Postgres for metadata, with migrations/seeders and Docker Compose for easy spin-up.
-- Patterns for **multi-step reasoning, structured outputs, and tool orchestration**.
+A production-ready **reference architecture** for building deterministic AI agents in a distributed system. It replaces fragile "chatbots" with a structured planner-executor workflow grounded in domain data.
 
-Use it as a template for **agentic workflows**: training, onboarding, or domain-specific copilots.
+* **Planner–Executor Pattern:** Implements a multi-stage agentic workflow where a Planner proposes the learning path and an Executor decomposes it into concrete steps with verified resources.
+* **Structured Outputs:** Solves non-deterministic LLM behavior by enforcing strict JSON schemas for all plans and quizzes, ensuring reliability for the UI.
+* **Advanced RAG & Re-ranking:** Features a production-grade retrieval pipeline using **Qdrant** (hybrid search) and **Postgres** to ground AI responses in real documentation.
+* **Polyglot Microservices:** Demonstrates a scalable layout: **Go Gateway** (orchestration & auth) managing **Python** AI services, ensuring distinct separation of concerns.
+
+**Use it as a blueprint for:** Building robust internal training platforms, onboarding copilots, and domain-specific certification agents.
 
 ---
 
